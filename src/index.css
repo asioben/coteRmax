@@ -1,0 +1,40 @@
+input[type=text] {
+    border-radius: 6px;
+    border-width: 2px;
+    border-color:black;
+    height: 30px;
+    width: 300px;
+}
+
+.sinput:hover{
+    border-color:blue;
+}
+
+.calculator{
+    /*flex:auto;*/
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calc{
+    height:100%;
+}
+
+#presentation{
+    text-align:center;
+}
+
+.tlabel{
+    text-align: center;
+    width:100%;
+    display:block;
+    padding:0px;
+    padding-bottom: 2%;
+    margin: 0px;
+}
+
+.field{
+    padding-bottom: 2%;
+}

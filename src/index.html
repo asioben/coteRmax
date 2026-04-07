@@ -5,22 +5,44 @@
         <title>Cote R Max</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header>Cote R Max</header>
-        <h1>Calculateur de Cote R</h1>
-        <form>
-            <label>Moyenne</label><br>
-            <input type="text" id="m1"><br>
-            <label>Moyenne du groupe</label><br>
-            <input type="text" id="m2"><br>
-            <label>Écart-type</label><br>
-            <input type="text" id="m3"><br>
-            <label>Moyenne au secondaire</label><br>
-            <input type="text" id="m4"><br>
-            <label>Cote R</label><br>
-            <input type="text" id="m5"><br>
-        </form>
+        <div class="container">
+            <header>Cote R Max</header>
+            <div class="content">
+                <h1 id="presentation">Calculateur de Cote R</h1>
+                <div class="calculator">
+                    <form id="calc">
+                        <div class="field">
+                             <label class="tlabel">Moyenne</label>
+                             <input type="text" id="m1" class="sinput">
+                        </div>
+
+                        <div class="field">
+                             <label class="tlabel">Moyenne du groupe</label>
+                             <input type="text" id="m2" class="sinput">
+                        </div>
+
+                        <div class="field">
+                             <label class="tlabel">Écart-type</label>
+                             <input type="text" id="m3" class="sinput">
+                        </div>
+
+                        <div class="field">
+                             <label class="tlabel">Moyenne au secondaire</label>
+                             <input type="text" id="m4" class="sinput">
+                        </div>
+
+                        <div class="field">
+                             <label class="tlabel">Cote R</label>
+                             <input type="text" id="m5" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
         <script type="module" src="index.js"></script>
     </body>
 </html>

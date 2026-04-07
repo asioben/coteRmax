@@ -1,4 +1,4 @@
-function in_(x, array){
+export function in_(x, array){
    var size = array.length;
    for(let i = 0; i < size; i++){
       if(array[i] == x) return true;
@@ -30,7 +30,7 @@ function checkInput(input,key){
    return result;
 }
 
-export default function getInput(id){
+export function getInput(id){
    var form = document.getElementById(id);
    if(form == null) return null;
    var input = [];
