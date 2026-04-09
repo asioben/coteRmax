@@ -27,8 +27,8 @@ export function coteR(average, group_average, standard_deviation,group_strength)
         data[i] = Number(data[i]);
         if(data[i] == 0) return NaN;
         if(in_(i,averages)){
-            console.log(data[i]);
-            if(data[i] > 100) document.getElementById(doms[i]).value = 100;
+            //console.log(data[i]);
+            //if(data[i] > 100) document.getElementById(doms[i]).value = 100;
         }
     }
 

@@ -17,6 +17,7 @@ function getText(key){
 
 function checkInput(input,key){
    var check = input;
+   var number = 0;
    if(key != null){
       if(key == "pop") check.pop();
       else{
@@ -25,6 +26,14 @@ function checkInput(input,key){
    }
    input = check;
    var result = check.join("");
+
+   number = Number(result);
+   console.log(number);
+   if(number > 100){
+       input.pop();
+       result = input.join("");
+   }
+
    //console.log(check);
 
    return result;
